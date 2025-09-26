@@ -9,7 +9,7 @@ import StartScreen from "./pages/StartScreen";
 import ReactionStage from "./pages/ReactionStage";
 import ResultScreen from "./pages/ResultScreen";
 import Leaderboard from "./pages/Leaderboard";
-
+//function
 function App() {
   return (
     <Router>
