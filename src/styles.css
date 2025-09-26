@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Containers */
+.auth-container,
+.start-container,
+.reaction-container,
+.result-container,
+.leaderboard-container {
+  width: 320px;
+  margin: 80px auto;
+  padding: 20px;
+  border: 2px solid #d32f2f;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  color: #d32f2f;
+}
+
+/* Inputs */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+}
+
+/* Buttons */
+button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 12px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
+
+/* Errors & Links */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #d32f2f;
+  font-weight: bold;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Reaction Game */
+.lights-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.light {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #444;
+}
+
+.light.on {
+  background: red;
+}
+
+.result-time {
+  font-size: 20px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #bbb;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #d32f2f;
+  color: #fff;
+}
+/* Login page styles */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* Start Screen */
+.start-container {
+  width: 320px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #1976d2;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.start-container h2 {
+  margin-bottom: 10px;
+  color: #1976d2;
+}
+
+.start-container p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.start-container button {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.start-container button:first-of-type {
+  background: #1976d2;
+  color: white;
+}
+
+.start-container button:first-of-type:hover {
+  background: #0d47a1;
+}
+
+.start-container .logout {
+  background: #d32f2f;
+  color: white;
+}
+
+.start-container .logout:hover {
+  background: #b71c1c;
+}
+
+/* Reaction Stage */
+.reaction-container {
+  width: 340px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #ff9800;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.lights {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.light {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #444;
+  border: 2px solid #222;
+}
+
+.light.on {
+  background: red;
+}
+
+.wait-text {
+  margin-top: 10px;
+  color: #555;
+}
+
+.tap-btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 20px;
+  background: #43a047;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tap-btn:hover {
+  background: #2e7d32;
+}
+/* Result Screen */
+.result-container {
+  width: 340px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.result-container h2 {
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.result-container p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.result-container .medal {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.result-container button {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.result-container button:first-of-type {
+  background: #4caf50;
+  transition: 0.4s;
+  color: white;
+}
+
+.result-container button:first-of-type:hover {
+  background: #2e7d32;
+  transform: scale(1.05);
+}
+
+.result-container .logout {
+  background: #d32f2f;
+  color: white;
+  transition: 0.4s;
+}
+
+.result-container .logout:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
+.result-container .back {
+  background: #007bff;
+  color: white;
+  transition: 0.4s;
+}
+.result-container .back:hover {
+  background: #0069d9;
+  transform: scale(1.05);
+}
+
+/* Leaderboard */
+.leaderboard-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #9c27b0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.leaderboard-container h2 {
+  margin-bottom: 20px;
+  color: #9c27b0;
+}
+
+.leaderboard-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.leaderboard-container th,
+.leaderboard-container td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.leaderboard-container th {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.leaderboard-container tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.leaderboard-container button {
+  padding: 10px 20px;
+  background: #9c27b0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.leaderboard-container button:hover {
+  background: #6a1b9a;
+  transform: scale(1.05);
+}
+/* Leaderboard button on Start screen */
+.start-container button:nth-of-type(2) {
+  background: #9c27b0;
+  color: white;
+}
+
+.start-container button:nth-of-type(2):hover {
+  background: #6a1b9a;
+  transform: scale(1.05);
+}
